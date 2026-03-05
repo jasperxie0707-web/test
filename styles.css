@@ -1,0 +1,136 @@
+:root {
+  color-scheme: light;
+  --bg: #f6f8fb;
+  --text: #1f2a44;
+  --muted: #60708f;
+  --primary: #3468ff;
+  --chip: #e8edff;
+  --card: #ffffff;
+  --border: #dde4f2;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.hero {
+  background: linear-gradient(135deg, #1c3faa, #3468ff);
+  color: #fff;
+  text-align: center;
+  padding: 48px 16px 36px;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero p {
+  margin: 12px auto 20px;
+  max-width: 760px;
+  opacity: 0.92;
+}
+
+.search-wrap {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.search-wrap input {
+  width: 100%;
+  border: none;
+  border-radius: 999px;
+  padding: 14px 20px;
+  font-size: 0.98rem;
+}
+
+main {
+  max-width: 1080px;
+  margin: 22px auto 40px;
+  padding: 0 16px;
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 18px;
+}
+
+.chip {
+  border: 1px solid transparent;
+  background: var(--chip);
+  color: #27438f;
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.chip.active {
+  background: var(--primary);
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-height: 220px;
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.82rem;
+}
+
+.tag {
+  background: #edf2ff;
+  color: #23408d;
+  border-radius: 8px;
+  padding: 3px 8px;
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 1.06rem;
+  line-height: 1.45;
+}
+
+.card p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 600;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  padding: 0 16px 28px;
+}
